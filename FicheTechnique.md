@@ -2,7 +2,7 @@
 Ruban de LEDS programmables sous la forme d’un cercle fixé au mur et contrôlable par infrarouge.
 
 
-I-	Conception du ruban LED
+===I-	Conception du ruban LED===
 
 Pour fabriquer un cercle en néon, il nous faut acheter un ruban de LEDS programmes individuellement ainsi qu’un tube flexible transparent pour y insérer notre banderole. 
 L’épaisseur de la fente du tube doit être légèrement supérieur à quelques millimètres de celle du ruban LED pour pouvoir le faire glisser à l’intérieur plus facilement.
@@ -10,7 +10,7 @@ Une fois les deux éléments mis ensemble, il nous faut coller les deux extrémi
 
 
 
-II-	Conception électronique et informatique
+===II-	Conception électronique et informatique===
 
   a)	Branchement des LEDS et du capteur infrarouge
 
@@ -43,7 +43,7 @@ Pour pouvoir sortir de cette boucle infinie et changer de mode d’affichage, no
 Cette fonction va nous permettre de modifier les conditions d’accès à la boucle infini while pour en sortir et permettre de choisir un nouveau mode.
 
 
-III-	Installation murale et accessoire 
+===III-	Installation murale et accessoire===
 
 Une fois la conception terminée, nous pouvons accrocher le cercle à un mur de la manière que l’on souhaite.
 Pour relier les fils à l’Arduino sans rallonger leur longueur nous pouvons réaliser en 3D un petit rangement sobre ayant la place de stocker la carte et des fentes pour laisser passer les fils et le capteur infrarouge.
