@@ -14,7 +14,7 @@ Une fois les deux éléments mis ensemble, il nous faut coller les deux extrémi
 
   a)	Branchement des LEDS et du capteur infrarouge
 
-Pour pouvoir contrôler l’allumage des LEDS du ruban, on connecte les 3 fils à la carte Arduino Nano au Ground, 5V et à un pin digital.
+Pour pouvoir contrôler l’allumage des LEDS du ruban, on connecte les 3 fils à la carte Arduino Nano : au Ground, 5V et à un pin digital.
 Pour le capteur infrarouge, on le branche également au Ground et au 5V puis à un autre pin digital disponible.
 
 b)	Programmation des LEDS et du capteur infrarouge
@@ -25,11 +25,12 @@ Notre code se fera sous l’IDE Arduino et deux bibliothèques nous serons néce
 
 Allumage des LEDS :
 
-Après avoir déclaré les variables du projet ( comme le nombre de LEDS du ruban et la référence) et mis en route les différentes bibliothèques dans le setup, nous déclarons deux fonctions qui seront nos deux types d’allumage différent du ruban : 
+Après avoir déclaré les variables du projet ( comme le nombre de LEDS du ruban et la référence) et mis en route les différentes bibliothèques dans le setup, nous déclarons deux fonctions qui seront nos deux types d’allumage différents du ruban : 
 •	Un allumage des LEDS une par une en bleu pour avoir l’effet d’un fluide
 •	Un allumage des LEDS progressif en blanc pour avoir l’effet d’un chargement
+
 Dans le loop du programme nous mettons en place deux conditions qui appellerons l’une de nos deux fonctions en fonction du bouton pressé par la télécommande.
-Le code pour allumer les lumières est grandement simplifié avec la bibliothèque car il nous suffit d’utiliser une boucle for, et à l’intérieur, donner les instructions d’allumage pour chacun d’entre elle.
+Le code pour allumer les lumières est grandement simplifié avec la bibliothèque car il nous suffit d’utiliser une boucle for, et à l’intérieur, donner les instructions d’allumage pour chacune d’entre elle.
 Dans notre premier mode : lorsqu’une LED s’allume en bleu, la précédente s’étend.
 Dans notre deuxième mode : Toutes les LEDS s’allument en blanc progressivement à une certaine vitesse puis arrivées au bout, s’éteignent également progressivement mais plus rapidement.
 Les fonctions doivent se répéter à l’infini sous l’effet d’une boucle while. 
